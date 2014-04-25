@@ -19,6 +19,7 @@
 		<div class='user-meta'>
 			<span class='user-icon-points'>
 				<span class='user-message'>
+					<? if ( !$memo_not_read = g::memo_new() ) $memo_not_read = 0 ?>
 					<img src='<?=$widget_config['url']?>/msg-icon.png'/>
 					<a href="<?=url_bbs()?>/memo.php" target="_blank" class='user_memo'>쪽지 <span class='memo-not-read'>[<?=$memo_not_read?>] </span></a>
 			
